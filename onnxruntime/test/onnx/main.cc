@@ -547,6 +547,8 @@ int real_main(int argc, char* argv[], Ort::Env& env) {
       {"nesterov_momentum", "not a registered function/op", {}},        // Op not registered.
       {"cast_FLOAT_to_BFLOAT16", "onnx generate bfloat tensor as uint16 type", {}},
       {"cast_BFLOAT16_to_FLOAT", "onnx generate bfloat tensor as uint16 type", {}},
+      {"sequence_insert_at_back", "onnx currently not supporting loading segment", {}},
+      {"sequence_insert_at_front", "onnx currently not supporting loading segment", {}},
   };
 
 #ifdef DISABLE_ML_OPS
